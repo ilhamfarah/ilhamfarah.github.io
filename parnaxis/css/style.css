@@ -1,0 +1,34 @@
+.section1 {
+
+	background-image: url(../images/image1);
+}
+
+.section2 {
+
+	background-image: url(../images/image2);
+}
+
+.section3 {
+
+	background-image: url(../images/image3);
+}
+
+.section4 {
+
+	background-image: url(../images/image4);
+}
+
+.section5 {
+
+	background-image: url(../images/image5);
+}
+
+
+html, body {
+	height: 100%;
+}
+
+.section1, .section2, .section3, .section4, .section5 {
+
+	height: 100%;
+}
