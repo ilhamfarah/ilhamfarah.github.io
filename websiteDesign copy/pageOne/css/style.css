@@ -1,0 +1,204 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+
+
+/*header styling ⬇*/
+#header {
+    width: 100%;
+    min-height: 100px;
+    max-height: 100px;
+    background-color: #840884;
+    margin-bottom: 25px;
+    position: relative;
+    display: flex;  /* Change from block to flex to manage inline elements more effectively */
+    align-items: center;  /* Vertically center content */
+    justify-content: space-between;
+}
+
+#logo {
+    position: relative;
+    top: 0px;
+    width: 150px;
+    margin: auto 0;  /* Ensure it aligns vertically with flex container */
+}
+
+#dropdownMenus {
+    display: inline-flex;
+    margin-right: 50%;
+    gap: 60px;  /* Add spacing between dropdowns */
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+    display: inline-flex;
+}
+
+.dropbtn {
+    background: none;
+    border: none;
+    color: #ECE3EF;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: Verdana;
+    outline: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FFFFFF;
+    min-width: 160px;
+    box-shadow: 3px 3px 10px #ECE3EF;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: Verdana;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#searchBar {
+    background-color: #ECE3EF;
+    width: 25%;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    padding: 10px 15px;
+    display: inline;
+    border-radius: 25px;
+}
+
+#searchIcon {
+    color: #840884;
+}
+
+#searchText {
+    display: inline;
+    position: relative;
+    bottom: 5px;
+    font-family: Verdana;
+}
+
+#makeAPost {
+    color: #ECE3EF;
+    position: absolute;
+    top: 50%;
+    right: 19%;
+    transform: translate(-50%, -50%);
+    display: inline;
+    width: 24px;
+}
+
+#makeAPostText{
+
+    font-family: verdana;
+    color: #ECE3EF;
+    position: relative;
+    right: 12%;
+}
+
+#logInIcon {
+    color: #ECE3EF;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translate(-50%, -50%);
+    display: inline;
+    width: 24px;
+}
+
+#logInIconText {
+
+    font-family: verdana;
+    color: #ECE3EF;
+    position: relative;
+    right: 7%;
+}
+
+/*header styling ⬆*/
+
+
+
+
+
+/* Container layout */
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 10px;
+    padding: 20px;
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 250px;
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    margin-right: 20px;
+    box-shadow: 10px 
+}
+
+.sidebar h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.filter {
+    margin-bottom: 20px;
+}
+
+.filter label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.filter select,
+.filter input[type="range"] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+/*    border: 1px solid #ccc;*/
+}
+
+/* Style for the header and cars screenshot */
+
+
+
+.mainImage {
+    width: 130%;
+    max-height: auto;
+    border-radius: 10px;
+    margin: 0 auto;
+
+
+ }   

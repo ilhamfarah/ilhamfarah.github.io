@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Craigslist Posting</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+   <!-- header -->
+    <div id="header"> 
+        
+            <img src="images/logoWhite.png" id="logo">
+
+             <div id="dropdownMenus">
+                <div class="dropdown">
+                    <button class="dropbtn">For Sale ⌵</button>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Jobs ⌵</button>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Discussion Forums ⌵</button>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="searchBar">
+                <span id="searchIcon" class="material-symbols-outlined"> search </span>
+                <p id="searchText">Search</p>
+            </div>
+            <img src="images/note_add.png" id="makeAPost">
+            <p id="makeAPostText">Post</p>
+
+            <img src="images/login.png" id="logInIcon">
+            <p id="logInIconText">Log In</p>
+    </div>
+
+
+    <h1>Craigslist Create a Posting</h1>
+
+    <div class="dropdownSection">
+        <!-- Drop down section 1: Choose Location (Dropdown Menu) -->
+        <div class="dropdownItem">
+            <label for="location">Location:</label>
+            <select id="location" name="location">
+                <option value="toronto">City of Toronto</option>
+                <option value="durhamRegion">Durham Region</option>
+                <option value="yorkRegion">York Region</option>
+                <option value="brampton">Brampton-Caledon</option>
+                <option value="mississauga">Mississauga</option>
+                <option value="oakvilleMilton">Oakville-Milton</option>
+            </select>
+        </div>
+
+        <!-- Drop down section 2: Choose Posting Type (Dropdown Menu) -->
+        <div class="dropdownItem">
+            <label for="postingType">Posting Type:</label>
+            <select id="postingType" name="postingType">
+                <option value="jobOffered">Job Offered</option>
+                <option value="gigOffered">Gig Offered</option>
+                <option value="resumeJobWanted">Resume / Job Wanted</option>
+                <option value="housingOffered">Housing Offered</option>
+                <option value="housingWanted">Housing Wanted</option>
+                <option value="forSaleOwner">For Sale by Owner</option>
+                <option value="forSaleDealer">For Sale by Dealer</option>
+                <option value="wantedOwner">Wanted by Owner</option>
+                <option value="wantedDealer">Wanted by Dealer</option>
+                <option value="serviceOffered">Service Offered</option>
+                <option value="community">Community</option>
+                <option value="eventClass">Event / Class</option>
+            </select>
+        </div>
+
+        <!--  Drop down section 3: Choose Category (Dropdown Menu) -->
+        <div class="dropdownItem">
+            <label for="category">Category:</label>
+            <select id="category" name="category">
+                <option value="antiques">Antiques</option>
+                <option value="appliances">Appliances</option>
+                <option value="artsCrafts" selected>Arts & Crafts</option>
+                <option value="autoParts">Auto Parts</option>
+                <option value="bicycles">Bicycles</option>
+                <option value="boats">Boats</option>
+                <option value="booksMgazines">Books & Magazines</option>
+                <option value="carsTrucks">Cars & Trucks</option>
+                <option value="clothingAccessories">Clothing & Accessories</option>
+                <option value="collectibles">Collectibles</option>
+                <option value="electronics">Electronics</option>
+                <option value="furniture">Furniture</option>
+            </select>
+        </div>
+    </div>
+
+
+ <!-- Post Title Box -->
+    <div class="postBox" id="postTitleBox">
+        <label for="postTitle">Post Title:</label>
+        <input type="text" id="postTitle" name="postTitle">
+    </div>
+
+    <!-- Description Box -->
+    <div class="postBox" id="descriptionBox">
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" rows="6"></textarea>
+    </div>
+
+    <!-- Price Box -->
+    <div class="postBox" id="priceBox">
+        <label for="price">Price:</label>
+        <input type="text" id="price" name="price">
+    </div>
+
+    <!-- Contact Info Box -->
+    <div class="postBox" id="contactInfoBox">
+        <label for="contactInfo">Contact Information:</label>
+        <input type="text" id="contactInfo" name="contactInfo" placeholder="Your Email or Phone">
+    </div>
+    <!-- Submit button -->
+    <button class="submitButton">Submit</button>
+
+</body>
+</html>

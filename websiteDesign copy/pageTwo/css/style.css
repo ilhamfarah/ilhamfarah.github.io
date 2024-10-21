@@ -1,0 +1,337 @@
+body {
+	background-color: #F5F5F5;
+	margin: 0px;
+}
+
+/*header styling ⬇*/
+#header {
+    width: 100%;
+    min-height: 10px;
+    max-height: 100px;
+    background-color: #840884;
+    margin-bottom: 25px;
+    position: relative;
+    display: flex;  /* Change from block to flex to manage inline elements more effectively */
+    align-items: center;  /* Vertically center content */
+    justify-content: space-between;
+}
+
+#logo {
+    position: relative;
+    top: 0px;
+    width: 150px;
+    margin: auto 0;  /* Ensure it aligns vertically with flex container */
+}
+
+#dropdownMenus {
+    display: inline-flex;
+    margin-right: 50%;
+    gap: 60px;  /* Add spacing between dropdowns */
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+    display: inline-flex;
+}
+
+.dropbtn {
+    background: none;
+    border: none;
+    color: #ECE3EF;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: Verdana;
+    outline: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FFFFFF;
+    min-width: 160px;
+    box-shadow: 3px 3px 10px #ECE3EF;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: Verdana;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#searchBar {
+    background-color: #ECE3EF;
+    width: 25%;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    padding: 10px 15px;
+    display: inline;
+    border-radius: 25px;
+}
+
+#searchIcon {
+    color: #840884;
+}
+
+#searchText {
+    display: inline;
+    position: relative;
+    bottom: 5px;
+    font-family: Verdana;
+}
+
+#makeAPost {
+    color: #ECE3EF;
+    position: absolute;
+    top: 50%;
+    right: 18%;
+    transform: translate(-50%, -50%);
+    display: inline;
+    width: 24px;
+}
+
+#makeAPostText{
+
+	font-family: verdana;
+	color: #ECE3EF;
+	position: relative;
+	right: 12%;
+}
+
+#logInIcon {
+    color: #ECE3EF;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translate(-50%, -50%);
+    display: inline;
+    width: 24px;
+}
+
+#logInIconText {
+
+	font-family: verdana;
+	color: #ECE3EF;
+	position: relative;
+	right: 7%;
+}
+
+#title {
+
+	width: 80%;
+	min-height: 75px;
+	padding: 0px;
+	position: relative;
+	left: 10%;
+	margin-bottom: 20px;
+/* how can i make the heigh responsive as well	*/
+}
+
+/*header styling ⬆*/
+
+
+
+
+h1 {
+	margin: 0px;
+	font-family: Verdana;
+
+}
+
+h3 {
+	margin: 0px;
+	font-family: Verdana;
+
+}
+
+#carImage {
+
+	width: 50%;
+	position: relative;
+	float: left;
+	left: 10%;
+	display: block;
+
+
+}
+
+#carouselImage {
+
+	width: 50%;
+	position: relative;
+	float: left;
+	left: 10%;
+	display: block;
+
+}
+
+
+#carInfo {
+
+	display: block;
+	width: 30%;
+	min-height: 600px;
+	float: right;
+	position: relative;
+	right: 10%;
+	display: flex;
+	flex-direction: column;
+
+/* How do i make it sit under the location div and not fall under the image when the tab size is smaller	*/
+}
+
+.carInfoItem {
+	width: 100%;
+	min-height: 125px;
+	border: grey;
+	border-radius: 10px;
+	background-color: #FFFFFF;
+	margin: 2.5%;
+	box-shadow: 3px 3px 10px #ECE3EF;
+
+}
+
+.carInfoItemImg{
+	width: 25px;
+  	display: inline;
+  	margin: 30px;
+  	
+ 
+
+}
+
+.carInfoItemTitle {
+  	font-family: verdana;
+  	text-align: centre;
+  	display: inline;
+  	position: relative;
+  	top: -35px;
+}
+
+.carInfoItemText {
+	font-family: verdana;
+  	text-align: centre;
+  	position: relative;
+  	top: -35px;
+  	padding-left: 90px;
+  	color: #858585;
+
+}
+
+#sellersInfo {
+
+	display: block;
+	width: 47%;
+	min-height: 300px;
+	background-color: #FFFFFF;
+	position: relative;
+	float: left;
+	left: 10%;
+	border-radius: 15px;
+	margin-top: 2.5%;
+	margin-bottom: 2.5%;
+	box-shadow: 3px 3px 10px #ECE3EF;
+	font-family: Verdana;
+	padding: 20px;
+
+}
+
+#sellersInfoText {
+
+	
+	padding-top: 5px;
+
+}
+
+#locationMap {
+
+	width: 30%;
+	height: 500px;
+	position: relative;
+	float: right;
+	right: 7.5%;
+    margin: 1.5%;
+    border-radius: 10px;
+}
+
+#contactInfo {
+    display: block;
+    width: 47%;
+    min-height: 300px;
+    background-color: #FFFFFF;
+    position: relative;
+    float: left;
+    left: 10%;
+    border-radius: 15px;
+    margin-bottom: 2.5%;
+    box-shadow: 3px 3px 10px #ECE3EF;
+    font-family: Verdana;
+    padding: 20px;
+}
+
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-family: Verdana;
+    font-size: 14px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: Verdana;
+}
+
+.contact-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+#contactSeller {
+    width: 100%;
+    padding: 10px;
+    background-color: #840884;
+    color: #ECE3EF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#contactSeller:hover {
+    background-color: #ECE3EF;
+    color: #840884;
+}
+
+
+.subheading {
+	font-family: verdana;
+	font-size: 20px;
+	padding-left: 0px;
+	font-weight: bold;
+}
