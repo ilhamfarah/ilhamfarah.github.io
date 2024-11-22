@@ -1,0 +1,93 @@
+body {
+	font-family: Arial, sans-serif;
+	text-align: center;
+	font-weight: bold;
+	font-size: 50px;
+	background: url('../images/bg.jpg');
+	background-size: 100%;
+
+}
+
+#winGif {
+/*	background: url('../images/firework.gif');*/
+}
+
+
+#turn {
+	font-size: 30px;
+}
+#winner {
+	display: inline;
+	text-align: center;
+}
+#board {
+	height: 360px;
+	width: 450px;
+
+	background-color: blue;
+	border: 10px solid navy;
+
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+.tile {
+	height: 68px;
+	width: 68px;
+	margin: 5px;
+
+	background-color: white;
+	border-radius: 50%;
+	border: 5px solid navy;
+}
+#arrows {
+
+width: 2100px;
+
+}
+.setYellow {
+
+	background-color: yellow;
+}
+
+.setRed {
+	background-color: red;
+}
+
+#replay {
+
+	height: 50px;
+	width: 150px;
+	background-color: blue;
+	color: white;
+	border-radius: 50px;
+	font-size: 20px;
+	display: none;
+
+}
+
+#replay:hover {
+
+	background-color: navy;
+	color: white;
+}
+
+
+
+.gif-container img {
+	float: right;
+	display: flex;
+	width: 70%;
+	height: auto;
+	position: absolute;
+	left: 150px;
+	top: -300px;
+	display: none; /* Initially hide the GIF */
+}
+
+#arrows {
+	position: relative;
+    float: left;
+    right: 30%;
+    width: 2300px;
+}
